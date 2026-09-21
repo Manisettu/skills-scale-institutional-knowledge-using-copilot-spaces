@@ -1,24 +1,22 @@
 # OctoAcme Project Management Documentation
 
-This directory contains the process guidance used to plan, deliver, release, and improve OctoAcme projects. Use the documents below as an onboarding reference and as a day-to-day guide for cross-functional delivery.
+This folder contains the core project management guidance for OctoAcme. The project lifecycle begins with initiation, when a new idea is validated through a one-pager, stakeholder alignment, success metrics, and a go/no-go decision before planning begins. Once approved, the team turns the initiative into a prioritized backlog, estimates scope, defines acceptance criteria and a Definition of Done, and maps out milestones, dependencies, and release timing. This keeps work aligned to customer value and ensures that scope, risk, and commitments are understood before delivery starts.
+
+OctoAcme also emphasizes clear ownership and predictable communication. Product Managers define outcomes and prioritize the backlog, Project Managers coordinate delivery, schedules, risks, and stakeholder updates, and developers and QA partners turn the work into tested, shippable increments. Communication is intentionally structured around weekly PM and product alignment, standups for the delivery team, milestone demos, and monthly stakeholder updates, with escalation paths that move from local team triage to project leadership and sponsor-level intervention for business-impacting issues. This cadence supports transparency and rapid decision-making without creating unnecessary overhead.
+
+During execution, work is tracked in a project board from backlog through review and QA, with pull requests expected to include issue links and acceptance criteria, pass CI checks, and receive approval before merge. Risks and dependencies are tracked in a risk register, reviewed during weekly syncs, and escalated as needed to avoid surprises. Release and deployment are treated as controlled, observable activities: teams verify acceptance criteria, run staging and smoke tests, prepare rollback plans, announce the release, and monitor the production impact afterward. The process is designed to reduce delivery risk while keeping progress visible.
+
+OctoAcme also reinforces continuous improvement. After each sprint, release, milestone, or incident, the team holds a retrospective to capture what went well, what needs improvement, and which actions should be tracked with clear owners and due dates. Those actions are added back to the backlog or project issues to ensure follow-through and are reviewed in weekly syncs. This creates a learning loop that supports better delivery over time and keeps the project management system practical, transparent, and adaptable.
 
 ## Documentation index
+- [Project Management Overview](octoacme-project-management-overview.md)
+- [Project Initiation Guide](octoacme-project-initiation.md)
+- [Project Planning](octoacme-project-planning.md)
+- [Execution & Tracking](octoacme-execution-and-tracking.md)
+- [Risk Management & Communication](octoacme-risks-and-communication.md)
+- [Release & Deployment Guide](octoacme-release-and-deployment.md)
+- [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md)
+- [Roles & Personas](octoacme-roles-and-personas.md)
 
-- [OctoAcme Project Management Overview](octoacme-project-management-overview.md)
-- [OctoAcme Project Initiation Guide](octoacme-project-initiation.md)
-- [OctoAcme Project Planning](octoacme-project-planning.md)
-- [OctoAcme Execution & Tracking](octoacme-execution-and-tracking.md)
-- [OctoAcme Risk Management & Communication](octoacme-risks-and-communication.md)
-- [OctoAcme Release & Deployment Guide](octoacme-release-and-deployment.md)
-- [OctoAcme Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md)
-- [OctoAcme Roles & Personas](octoacme-roles-and-personas.md)
-
-## Project management process summary
-
-OctoAcme follows an iterative lifecycle that moves from initiation through planning, execution, release, and retrospective. A project starts with a one-pager that defines the problem, goal, success metrics, stakeholders, timeline, risks, and proposed team. After Product Lead review and stakeholder alignment, the team makes a go/no-go decision based on clear success measures, agreed priority, and confirmed availability. Planning then turns the approved initiative into a prioritized backlog with acceptance criteria, estimates, a Definition of Done, milestones, release plans, and documented dependencies.
-
-Execution is tracked on a project board as work moves from Backlog and Ready through In Progress, In Review, QA, and Done. Daily standups focus on progress and blockers, weekly delivery or PM syncs review status and risks, and sprint or milestone demos provide feedback. Product Managers own outcomes, prioritization, and measurement; Project Managers coordinate schedules, resources, risks, documentation, and communication; Developers build and test the work; QA validates acceptance criteria; and stakeholders provide input and approvals.
-
-Communication is predictable and transparent. Teams use regular PM and Product Manager alignment, delivery standups, stakeholder updates, project boards, status reports, and a single source of truth such as the project README or release document. Risks and dependencies are recorded with impact, likelihood, owners, mitigations, and status, reviewed in weekly syncs, and escalated from the team to the PM, Product Lead, or sponsor according to business impact. Incident communications include the current situation, actions, expected timeline, and a blameless follow-up.
-
-Quality is built into development and release. Pull requests should reference issues and acceptance criteria, pass automated tests and linting, and receive review approval before merging. Unit, integration, end-to-end smoke, security, and manual acceptance testing are used as appropriate. Releases require completed acceptance criteria, passing CI and security checks, release notes, rollback readiness, staging validation, production verification, and stakeholder notification. After each sprint, release, milestone, or incident, retrospectives capture lessons and assign a small number of owned, time-bound actions that are tracked through the backlog and reviewed for measurable improvement.
+## Recommended use
+Use this folder as the entry point for onboarding, project operations, and day-to-day execution. Each document in this set provides a focused playbook for a stage of the OctoAcme lifecycle, and together they give a consistent way to plan, deliver, communicate, and improve work.
